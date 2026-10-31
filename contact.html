@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order & Contact | Barks and Blooms HTX</title><meta name="description" content="Order dog treats or flowers, or contact Barks and Blooms HTX.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head><body>
+<header class="site-header"><div class="wrap bar"><a class="brand" href="index.html"><svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><g fill="#d98ba0"><circle cx="24" cy="14" r="7"/><circle cx="14" cy="22" r="7"/><circle cx="34" cy="22" r="7"/><circle cx="18" cy="33" r="7"/><circle cx="30" cy="33" r="7"/></g><circle cx="24" cy="25" r="6" fill="#f3d38a"/><path d="M21 25c0-2 6-2 6 0 0 2-3 3-3 3s-3-1-3-3z" fill="#7a4b3a"/></svg><span>Barks <em>&amp;</em> Blooms <small>HTX</small></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="dog-treats.html">Dog Treats</a><a href="dried-flowers.html">Dried Flowers</a><a href="fresh-flowers.html">Fresh Flowers</a><a href="services.html">Services</a><a href="about.html">About</a><a href="delivery.html">Delivery</a><a href="contact.html" aria-current="page">Order / Contact</a></nav></div></header>
+<main><section class="hero"><div class="wrap"><h1>Order &amp; Contact</h1><p class="lead">Send an order request. We reply to confirm availability, total and delivery. No payment is taken on this site.</p></div></section><section class="wrap grid2"><form class="form" id="order-form" action="https://formspree.io/f/FORM_ID" method="POST">
+<!-- REPLACE FORM_ID with your Formspree form ID (https://formspree.io). Until replaced, the form falls back to email. -->
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+<label>Product line<select name="line" id="line"><option value="treats">Dog treats</option><option value="dried">Dried &amp; preserved flowers</option><option value="fresh">Fresh flowers</option><option value="other">Question / other</option></select></label>
+<label>Item<select name="item" id="item"><option value="">Choose (optional)</option><option>Oatmeal Crunch Bones</option><option>Banana Bites</option><option>Peanut Butter Pups</option><option>Yunnan Petite Posy ($12.99)</option><option>Blush Bud Vase ($15.99)</option><option>Golden Meadow Bundle ($17.99)</option><option>Lavender Haze Jar ($19.99)</option><option>Everlasting Rose Box ($22.99)</option><option>Petite Market Bouquet</option><option>Garden Vase Arrangement</option><option>Celebration Centerpiece</option><option>Custom Order</option></select></label>
+<label>Treat bag size<select name="size"><option value="">n/a</option><option>4 oz ($8)</option><option>8 oz ($14)</option><option>16 oz ($24)</option><option>Sampler ($22)</option></select></label>
+<label>Quantity<input type="number" name="quantity" min="1" value="1"></label>
+<label>Delivery date<input type="date" name="date"></label>
+<label>Delivery address (Houston area)<textarea name="address" rows="2"></textarea></label>
+<label>Notes (dog allergies, colors, occasion)<textarea name="message" rows="4"></textarea></label>
+<input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+<button class="btn" type="submit">Send order request</button><p id="form-status" role="status"></p></form>
+<div class="note"><h3>Prefer email?</h3><p><a href="mailto:hello@barksandbloomshtx.com?subject=Order%20request">hello@barksandbloomshtx.com</a></p><p>Delivery is local to Houston for treats and fresh flowers. See <a href="delivery.html">delivery details</a>.</p></div></section></main>
+<footer class="site-footer"><div class="wrap cols"><div><strong>Barks and Blooms HTX</strong><p>Home-kitchen dog treats &amp; flowers, Houston, Texas.</p></div>
+<div><p><a href="delivery.html">Local delivery details</a><br><a href="contact.html">Place an order</a><br><a href="mailto:hello@barksandbloomshtx.com">hello@barksandbloomshtx.com</a></p></div>
+<div><p class="fine">Dog treats are for dogs only and are a snack, not a meal replacement. Made in a home kitchen. Contains peanuts and oats.</p></div></div>
+<p class="wrap fine">&copy; <span id="yr"></span> Barks and Blooms HTX &middot; barksandbloomshtx.com</p></footer>
+<script src="assets/main.js"></script></body></html>
